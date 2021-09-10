@@ -1,0 +1,226 @@
+\hypertarget{class_b_s_t}{}\doxysection{B\+ST$<$ T $>$ Class Template Reference}
+\label{class_b_s_t}\index{BST$<$ T $>$@{BST$<$ T $>$}}
+
+
+\mbox{\hyperlink{_b_s_t_8h_source}{B\+S\+T.\+h}} template to build \mbox{\hyperlink{class_b_s_t}{B\+ST}}.  
+
+
+
+
+{\ttfamily \#include $<$B\+S\+T.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_s_t_adcc81f772005f6902635e02156a7ef22}\label{class_b_s_t_adcc81f772005f6902635e02156a7ef22}} 
+\mbox{\hyperlink{class_b_s_t_adcc81f772005f6902635e02156a7ef22}{B\+ST}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_s_t_a3197ba1cd3e8cb4be9b6f9f9aa89eb68}{Insert\+Node}} (T data)
+\begin{DoxyCompactList}\small\item\em public function to insert node in tree \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_b_s_t_ad526e7bd57c76733a332a62a937195ef}{Search\+Node}} (const T \&data)
+\begin{DoxyCompactList}\small\item\em public search function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_s_t_ae9c23c2b2fba8bce5395a30e05eb8770}{Delete\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em public function to delete data in the tree \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_s_t_ab5c6266c334e298cc0cb1a3005f40a36}{In\+Order}} (void($\ast$visit)(T \&data))
+\begin{DoxyCompactList}\small\item\em public function for inorder traversal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_s_t_a2b45a74ab3d416ec0c4a2e881b2c040e}{Pre\+Order}} (void($\ast$visit)(T \&data))
+\begin{DoxyCompactList}\small\item\em public function for preorder traversal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_b_s_t_a9403e01897c9f7aaf6a0f272c104ad4a}{Post\+Order}} (void($\ast$visit)(T \&data))
+\begin{DoxyCompactList}\small\item\em public function for postorder traversal \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_b_s_t_a994f0f254fdfbbe1a7ceb8fb9c14e698}{B\+ST}} (\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \& \mbox{\hyperlink{class_b_s_t_a04b39febce852b576c1a79e4f826e71e}{operator=}} (\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em assignment operator overloading \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_b_s_t_ad3708ce5f813d8f8d8bd24bb9f133ffe}\label{class_b_s_t_ad3708ce5f813d8f8d8bd24bb9f133ffe}} 
+\mbox{\hyperlink{class_b_s_t_ad3708ce5f813d8f8d8bd24bb9f133ffe}{$\sim$\+B\+ST}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_b_s_t_a1e7c65f65168074f72f3d94af4cef506}{get\+Data}} (T \&data)
+\begin{DoxyCompactList}\small\item\em public function to return the data of a node that match data user is searching \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class B\+S\+T$<$ T $>$}
+
+\mbox{\hyperlink{_b_s_t_8h_source}{B\+S\+T.\+h}} template to build \mbox{\hyperlink{class_b_s_t}{B\+ST}}. 
+
+\begin{DoxyAuthor}{Author}
+Manveer 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_s_t_a994f0f254fdfbbe1a7ceb8fb9c14e698}\label{class_b_s_t_a994f0f254fdfbbe1a7ceb8fb9c14e698}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!BST@{BST}}
+\index{BST@{BST}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BST()}{BST()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::\mbox{\hyperlink{class_b_s_t}{B\+ST}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & (B\+S\+T$<$\+T$>$\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_s_t_ae9c23c2b2fba8bce5395a30e05eb8770}\label{class_b_s_t_ae9c23c2b2fba8bce5395a30e05eb8770}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!DeleteTree@{DeleteTree}}
+\index{DeleteTree@{DeleteTree}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DeleteTree()}{DeleteTree()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::Delete\+Tree}
+
+
+
+public function to delete data in the tree 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_a1e7c65f65168074f72f3d94af4cef506}\label{class_b_s_t_a1e7c65f65168074f72f3d94af4cef506}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!getData@{getData}}
+\index{getData@{getData}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::get\+Data (\begin{DoxyParamCaption}\item[{T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+public function to return the data of a node that match data user is searching 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & (T\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_ab5c6266c334e298cc0cb1a3005f40a36}\label{class_b_s_t_ab5c6266c334e298cc0cb1a3005f40a36}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!InOrder@{InOrder}}
+\index{InOrder@{InOrder}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InOrder()}{InOrder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::In\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(T \&data)}]{visit }\end{DoxyParamCaption})}
+
+
+
+public function for inorder traversal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & ($\ast$vist)(T\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_a3197ba1cd3e8cb4be9b6f9f9aa89eb68}\label{class_b_s_t_a3197ba1cd3e8cb4be9b6f9f9aa89eb68}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!InsertNode@{InsertNode}}
+\index{InsertNode@{InsertNode}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertNode()}{InsertNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::Insert\+Node (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})}
+
+
+
+public function to insert node in tree 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & (T) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_a04b39febce852b576c1a79e4f826e71e}\label{class_b_s_t_a04b39febce852b576c1a79e4f826e71e}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \& \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$ \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+assignment operator overloading 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & (B\+S\+T$<$\+T$>$\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+S\+T$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_a9403e01897c9f7aaf6a0f272c104ad4a}\label{class_b_s_t_a9403e01897c9f7aaf6a0f272c104ad4a}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!PostOrder@{PostOrder}}
+\index{PostOrder@{PostOrder}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PostOrder()}{PostOrder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::Post\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(T \&data)}]{visit }\end{DoxyParamCaption})}
+
+
+
+public function for postorder traversal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & ($\ast$vist)(T\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_a2b45a74ab3d416ec0c4a2e881b2c040e}\label{class_b_s_t_a2b45a74ab3d416ec0c4a2e881b2c040e}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!PreOrder@{PreOrder}}
+\index{PreOrder@{PreOrder}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PreOrder()}{PreOrder()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::Pre\+Order (\begin{DoxyParamCaption}\item[{void($\ast$)(T \&data)}]{visit }\end{DoxyParamCaption})}
+
+
+
+public function for preorder traversal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & ($\ast$vist)(T\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_s_t_ad526e7bd57c76733a332a62a937195ef}\label{class_b_s_t_ad526e7bd57c76733a332a62a937195ef}} 
+\index{BST$<$ T $>$@{BST$<$ T $>$}!SearchNode@{SearchNode}}
+\index{SearchNode@{SearchNode}!BST$<$ T $>$@{BST$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SearchNode()}{SearchNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ T $>$\+::Search\+Node (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+public search function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & (const T\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vicky/\+Desktop/\+U\+N\+I/\+Year 2 S\+E\+M1/\+I\+C\+T283/\+Weather\+App/B\+S\+T.\+h\end{DoxyCompactItemize}

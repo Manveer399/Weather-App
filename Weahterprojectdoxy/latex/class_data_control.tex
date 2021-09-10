@@ -1,0 +1,235 @@
+\hypertarget{class_data_control}{}\doxysection{Data\+Control Class Reference}
+\label{class_data_control}\index{DataControl@{DataControl}}
+
+
+\mbox{\hyperlink{_data_control_8h_source}{Data\+Control.\+h}} -\/ \mbox{\hyperlink{class_data_control}{Data\+Control}} class contains all the functions return the requested data for calculations using the sensor data.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Control.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_data_control_ab4b9664513b695f14108d7941e928ea3}\label{class_data_control_ab4b9664513b695f14108d7941e928ea3}} 
+\mbox{\hyperlink{class_data_control_ab4b9664513b695f14108d7941e928ea3}{Data\+Control}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_control_aefb6062ff005d30bdbb0fae2eb0ee480}{load\+File}} (ifstream \&infile)
+\begin{DoxyCompactList}\small\item\em a fucntion to load the data in the file into the structure \mbox{\hyperlink{class_b_s_t}{B\+ST}} years and map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_control_a7516a5736d1282ff54dd929f845dc7f2}{read\+File}} (string filename)
+\begin{DoxyCompactList}\small\item\em a function to read the metdataindex txt file and read the each filename and pass it to the loadfile function \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_data_control_a9e70712152abacfdc45dcbc8a704b1ff}{gen\+Month\+Year\+Key}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em a function to generate a key using a month and a year that will be used as key for the map. month is multiplied by 10000 plus the year \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_data_control_a01c5439872bad10f1b1a97c8819bf258}{gen\+Recordkey}} (string day, string hr, string mins)
+\begin{DoxyCompactList}\small\item\em a function to generate a key using day of a date,minute and hours of time which will be used for ordering the set inside map this will avoid duplication of data \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_control_a2b0a21341e7b8a982077bdd5841f16e5}{get\+Wind\+Speed}} (int month, int year, vector$<$ float $>$ \&speed)
+\begin{DoxyCompactList}\small\item\em a function to that will get the windspeed for a given month of a given year from the map. function will return true if data was found else false \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_control_abb4681f7ae0b20d3bb9a754309a63fbf}{get\+Amb\+Temp}} (int month, int year, vector$<$ float $>$ \&temp)
+\begin{DoxyCompactList}\small\item\em a function to that will get the ambient temperature for a given month of a given year from the map. function will return true if data was found else false \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_control_a796161fc18bf1d8cba34ab6be5bde5c5}{get\+Solar\+Rad}} (int month, int year, vector$<$ float $>$ \&sr)
+\begin{DoxyCompactList}\small\item\em a function to that will get the windspeed for a given month of a given year from the map. function will return true if data was found else false \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_control_aa47e4995353730a6c2b170e6adb9f94e}{check\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em a function to check whether a specific year exists in the strucutre. if years does not exist function return false else true \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_data_control_a3d052fc5e354ce235eaf6038dce218da}{out}} (int \&y)
+\begin{DoxyCompactList}\small\item\em a static function used for callback to display the data inside the \mbox{\hyperlink{class_b_s_t}{B\+ST}} year tree in order \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{_data_control_8h_source}{Data\+Control.\+h}} -\/ \mbox{\hyperlink{class_data_control}{Data\+Control}} class contains all the functions return the requested data for calculations using the sensor data. 
+
+\begin{DoxyAuthor}{Author}
+Manveer 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_control_aa47e4995353730a6c2b170e6adb9f94e}\label{class_data_control_aa47e4995353730a6c2b170e6adb9f94e}} 
+\index{DataControl@{DataControl}!checkYear@{checkYear}}
+\index{checkYear@{checkYear}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{checkYear()}{checkYear()}}
+{\footnotesize\ttfamily bool Data\+Control\+::check\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+a function to check whether a specific year exists in the strucutre. if years does not exist function return false else true 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a9e70712152abacfdc45dcbc8a704b1ff}\label{class_data_control_a9e70712152abacfdc45dcbc8a704b1ff}} 
+\index{DataControl@{DataControl}!genMonthYearKey@{genMonthYearKey}}
+\index{genMonthYearKey@{genMonthYearKey}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{genMonthYearKey()}{genMonthYearKey()}}
+{\footnotesize\ttfamily long long Data\+Control\+::gen\+Month\+Year\+Key (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+a function to generate a key using a month and a year that will be used as key for the map. month is multiplied by 10000 plus the year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month(int)} & \\
+\hline
+{\em year(int)} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long long 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a01c5439872bad10f1b1a97c8819bf258}\label{class_data_control_a01c5439872bad10f1b1a97c8819bf258}} 
+\index{DataControl@{DataControl}!genRecordkey@{genRecordkey}}
+\index{genRecordkey@{genRecordkey}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{genRecordkey()}{genRecordkey()}}
+{\footnotesize\ttfamily string Data\+Control\+::gen\+Recordkey (\begin{DoxyParamCaption}\item[{string}]{day,  }\item[{string}]{hr,  }\item[{string}]{mins }\end{DoxyParamCaption})}
+
+
+
+a function to generate a key using day of a date,minute and hours of time which will be used for ordering the set inside map this will avoid duplication of data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & (string) \\
+\hline
+{\em hr} & (string) \\
+\hline
+{\em mins} & (string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_abb4681f7ae0b20d3bb9a754309a63fbf}\label{class_data_control_abb4681f7ae0b20d3bb9a754309a63fbf}} 
+\index{DataControl@{DataControl}!getAmbTemp@{getAmbTemp}}
+\index{getAmbTemp@{getAmbTemp}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{getAmbTemp()}{getAmbTemp()}}
+{\footnotesize\ttfamily bool Data\+Control\+::get\+Amb\+Temp (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{int}]{year,  }\item[{vector$<$ float $>$ \&}]{temp }\end{DoxyParamCaption})}
+
+
+
+a function to that will get the ambient temperature for a given month of a given year from the map. function will return true if data was found else false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & (int) \\
+\hline
+{\em year} & (int) \\
+\hline
+{\em temp} & (vector$<$float$>$\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a796161fc18bf1d8cba34ab6be5bde5c5}\label{class_data_control_a796161fc18bf1d8cba34ab6be5bde5c5}} 
+\index{DataControl@{DataControl}!getSolarRad@{getSolarRad}}
+\index{getSolarRad@{getSolarRad}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{getSolarRad()}{getSolarRad()}}
+{\footnotesize\ttfamily bool Data\+Control\+::get\+Solar\+Rad (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{int}]{year,  }\item[{vector$<$ float $>$ \&}]{sr }\end{DoxyParamCaption})}
+
+
+
+a function to that will get the windspeed for a given month of a given year from the map. function will return true if data was found else false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & (int) \\
+\hline
+{\em year} & (int) \\
+\hline
+{\em speed} & (vector$<$float$>$\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a2b0a21341e7b8a982077bdd5841f16e5}\label{class_data_control_a2b0a21341e7b8a982077bdd5841f16e5}} 
+\index{DataControl@{DataControl}!getWindSpeed@{getWindSpeed}}
+\index{getWindSpeed@{getWindSpeed}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{getWindSpeed()}{getWindSpeed()}}
+{\footnotesize\ttfamily bool Data\+Control\+::get\+Wind\+Speed (\begin{DoxyParamCaption}\item[{int}]{month,  }\item[{int}]{year,  }\item[{vector$<$ float $>$ \&}]{speed }\end{DoxyParamCaption})}
+
+
+
+a function to that will get the windspeed for a given month of a given year from the map. function will return true if data was found else false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & (int) \\
+\hline
+{\em year} & (int) \\
+\hline
+{\em speed} & (vector$<$float$>$\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_aefb6062ff005d30bdbb0fae2eb0ee480}\label{class_data_control_aefb6062ff005d30bdbb0fae2eb0ee480}} 
+\index{DataControl@{DataControl}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily void Data\+Control\+::load\+File (\begin{DoxyParamCaption}\item[{ifstream \&}]{infile }\end{DoxyParamCaption})}
+
+
+
+a fucntion to load the data in the file into the structure \mbox{\hyperlink{class_b_s_t}{B\+ST}} years and map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infile} & (ifstream\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a3d052fc5e354ce235eaf6038dce218da}\label{class_data_control_a3d052fc5e354ce235eaf6038dce218da}} 
+\index{DataControl@{DataControl}!out@{out}}
+\index{out@{out}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{out()}{out()}}
+{\footnotesize\ttfamily void Data\+Control\+::out (\begin{DoxyParamCaption}\item[{int \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+a static function used for callback to display the data inside the \mbox{\hyperlink{class_b_s_t}{B\+ST}} year tree in order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_control_a7516a5736d1282ff54dd929f845dc7f2}\label{class_data_control_a7516a5736d1282ff54dd929f845dc7f2}} 
+\index{DataControl@{DataControl}!readFile@{readFile}}
+\index{readFile@{readFile}!DataControl@{DataControl}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily void Data\+Control\+::read\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+a function to read the metdataindex txt file and read the each filename and pass it to the loadfile function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & (string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vicky/\+Desktop/\+U\+N\+I/\+Year 2 S\+E\+M1/\+I\+C\+T283/\+Weather\+App/Data\+Control.\+h\item 
+C\+:/\+Users/vicky/\+Desktop/\+U\+N\+I/\+Year 2 S\+E\+M1/\+I\+C\+T283/\+Weather\+App/Data\+Control.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+# depslib dependency file v1.0
+1591675078 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\main.cpp
+	<iostream>
+	"Menu.h"
+
+1588404831 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\time.cpp
+	<iostream>
+	"Time.h"
+
+1591671761 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\time.h
+	<string>
+	<cstring>
+
+1588387903 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\weather.cpp
+	"Weather.h"
+
+1591675078 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\weather.h
+	<iostream>
+
+1591688934 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\records.cpp
+	"Records.h"
+
+1591688893 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\records.h
+	<iostream>
+	<string>
+	<cstring>
+	"Date.h"
+	"Time.h"
+	"Weather.h"
+
+1591671685 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\date.h
+	<iostream>
+
+1591668315 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\date.cpp
+	"Date.h"
+	<cstring>
+
+1591674983 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\datacontrol.h
+	<iostream>
+	<vector>
+	<set>
+	<map>
+	"Records.h"
+	"BST.h"
+	<sstream>
+	<fstream>
+	<string>
+
+1591671813 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\bst.h
+	<iostream>
+	<cstdlib>
+
+1591673036 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\datacontrol.cpp
+	"DataControl.h"
+
+1591668293 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\calculation.h
+	<iostream>
+	<cmath>
+	<vector>
+
+1591675078 c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\menu.h
+	"DataControl.h"
+	<string>
+	<vector>
+	<limits>
+	<stdexcept>
+	"Calculation.h"
+
+1591686639 source:c:\users\vicky\desktop\uni\year 2 sem1\ict283\weatherapp\menu.cpp
+	"Menu.h"
+
+1591937077 source:c:\users\vicky\desktop\weatherapp\datacontrol.cpp
+	"DataControl.h"
+
+1591690469 c:\users\vicky\desktop\weatherapp\datacontrol.h
+	<iostream>
+	<vector>
+	<set>
+	<map>
+	"Records.h"
+	"BST.h"
+	<sstream>
+	<fstream>
+	<string>
+
+1591688893 c:\users\vicky\desktop\weatherapp\records.h
+	<iostream>
+	<string>
+	<cstring>
+	"Date.h"
+	"Time.h"
+	"Weather.h"
+
+1591671685 c:\users\vicky\desktop\weatherapp\date.h
+	<iostream>
+
+1591671761 c:\users\vicky\desktop\weatherapp\time.h
+	<string>
+	<cstring>
+
+1591675078 c:\users\vicky\desktop\weatherapp\weather.h
+	<iostream>
+
+1591671813 c:\users\vicky\desktop\weatherapp\bst.h
+	<iostream>
+	<cstdlib>
+
+1591668315 source:c:\users\vicky\desktop\weatherapp\date.cpp
+	"Date.h"
+	<cstring>
+
+1591692178 source:c:\users\vicky\desktop\weatherapp\main.cpp
+	<iostream>
+	"Menu.h"
+
+1591690479 c:\users\vicky\desktop\weatherapp\menu.h
+	"DataControl.h"
+	<string>
+	<vector>
+	<limits>
+	<stdexcept>
+	"Calculation.h"
+
+1591668293 c:\users\vicky\desktop\weatherapp\calculation.h
+	<iostream>
+	<cmath>
+	<vector>
+
+1591688934 source:c:\users\vicky\desktop\weatherapp\records.cpp
+	"Records.h"
+
+1588404831 source:c:\users\vicky\desktop\weatherapp\time.cpp
+	<iostream>
+	"Time.h"
+
+1588387903 source:c:\users\vicky\desktop\weatherapp\weather.cpp
+	"Weather.h"
+
+1591851006 source:c:\users\vicky\desktop\weatherapp\menu.cpp
+	"Menu.h"
+

@@ -1,0 +1,215 @@
+\hypertarget{class_records}{}\doxysection{Records Class Reference}
+\label{class_records}\index{Records@{Records}}
+
+
+\mbox{\hyperlink{_records_8h_source}{Records.\+h}} -\/ \mbox{\hyperlink{class_records}{Records}} class that will keep of the entries.  
+
+
+
+
+{\ttfamily \#include $<$Records.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_records_a186b2f18fd2d59930ceb034ea0ec0b07}\label{class_records_a186b2f18fd2d59930ceb034ea0ec0b07}} 
+\mbox{\hyperlink{class_records_a186b2f18fd2d59930ceb034ea0ec0b07}{Records}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_records_a6601ef7306a8d79cc551a28ed99f8670}{set\+Info}} (float s, float r, float t, int day, int mon, int year, int hours, int minutes, string key)
+\item 
+\mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_records_ad6cae6bc29ec40cb39d9d2bcd69ab6a7}{get\+Date}} ()
+\item 
+const \mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_records_a4a71ac6cc91c526132f6a07fc5eb3722}{get\+Date}} () const
+\item 
+const \mbox{\hyperlink{class_time}{Time}} \& \mbox{\hyperlink{class_records_aa6571514c9c08abef47b932f7c9e94b9}{get\+Time}} () const
+\item 
+\mbox{\hyperlink{class_time}{Time}} \& \mbox{\hyperlink{class_records_ad335fe2ad1a4f45d9a4477b717bc6942}{get\+Time}} ()
+\item 
+\mbox{\hyperlink{class_weather}{Weather}} \& \mbox{\hyperlink{class_records_aad21568d701d0b7ccf603ac969ce8f29}{get\+Weather}} ()
+\item 
+\mbox{\hyperlink{class_weather}{Weather}} const  \& \mbox{\hyperlink{class_records_a28febd9f84a2c57d7760521b1101a563}{get\+Weather}} () const
+\item 
+string \mbox{\hyperlink{class_records_af8b48aa4ec4783a759b4d9d55520bb3d}{get\+Key}} ()
+\begin{DoxyCompactList}\small\item\em function to get key of the records which will be used for ordering and avoid duplicates \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_records_a14de1639929ed19354a8095e87a499cb}{set\+Key}} (string k)
+\begin{DoxyCompactList}\small\item\em function to set the key of the record \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_records_ade1f87cf90d7f27f3f95879741be48a2}{operator$<$}} (const \mbox{\hyperlink{class_records}{Records}} \&other\+Records) const
+\begin{DoxyCompactList}\small\item\em less than operator overloading which will be use for ordering,it will compare the key \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_records_aa33d1f8efcb18d146fcbe584c343d73d}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_records}{Records}} \&r)
+\begin{DoxyCompactList}\small\item\em a friend function useful for debugging but not a very good thing \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{_records_8h_source}{Records.\+h}} -\/ \mbox{\hyperlink{class_records}{Records}} class that will keep of the entries. 
+
+\begin{DoxyAuthor}{Author}
+Manveer 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_records_ad6cae6bc29ec40cb39d9d2bcd69ab6a7}\label{class_records_ad6cae6bc29ec40cb39d9d2bcd69ab6a7}} 
+\index{Records@{Records}!getDate@{getDate}}
+\index{getDate@{getDate}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_date}{Date}} \& Records\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a reference to date object (used to access non const method of date) \begin{DoxyReturn}{Returns}
+date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_a4a71ac6cc91c526132f6a07fc5eb3722}\label{class_records_a4a71ac6cc91c526132f6a07fc5eb3722}} 
+\index{Records@{Records}!getDate@{getDate}}
+\index{getDate@{getDate}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_date}{Date}}\& Records\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a reference to date object (used to access const method of date) \begin{DoxyReturn}{Returns}
+date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_af8b48aa4ec4783a759b4d9d55520bb3d}\label{class_records_af8b48aa4ec4783a759b4d9d55520bb3d}} 
+\index{Records@{Records}!getKey@{getKey}}
+\index{getKey@{getKey}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily string Records\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to get key of the records which will be used for ordering and avoid duplicates 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_ad335fe2ad1a4f45d9a4477b717bc6942}\label{class_records_ad335fe2ad1a4f45d9a4477b717bc6942}} 
+\index{Records@{Records}!getTime@{getTime}}
+\index{getTime@{getTime}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time}{Time}}\& Records\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a reference to time object (used to access non const method of time) \begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_aa6571514c9c08abef47b932f7c9e94b9}\label{class_records_aa6571514c9c08abef47b932f7c9e94b9}} 
+\index{Records@{Records}!getTime@{getTime}}
+\index{getTime@{getTime}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_time}{Time}} \& Records\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a reference to time object (used to access const method of time) \begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_aad21568d701d0b7ccf603ac969ce8f29}\label{class_records_aad21568d701d0b7ccf603ac969ce8f29}} 
+\index{Records@{Records}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_weather}{Weather}} \& Records\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+a reference to weather object (used to non const method of weather ) \begin{DoxyReturn}{Returns}
+w 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_a28febd9f84a2c57d7760521b1101a563}\label{class_records_a28febd9f84a2c57d7760521b1101a563}} 
+\index{Records@{Records}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weather}{Weather}} const\& Records\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+a reference to weather object (used to access const method of weather) \begin{DoxyReturn}{Returns}
+w 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_ade1f87cf90d7f27f3f95879741be48a2}\label{class_records_ade1f87cf90d7f27f3f95879741be48a2}} 
+\index{Records@{Records}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Records\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_records}{Records}} \&}]{other\+Records }\end{DoxyParamCaption}) const}
+
+
+
+less than operator overloading which will be use for ordering,it will compare the key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Records} & (const\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_a6601ef7306a8d79cc551a28ed99f8670}\label{class_records_a6601ef7306a8d79cc551a28ed99f8670}} 
+\index{Records@{Records}!setInfo@{setInfo}}
+\index{setInfo@{setInfo}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{setInfo()}{setInfo()}}
+{\footnotesize\ttfamily void Records\+::set\+Info (\begin{DoxyParamCaption}\item[{float}]{s,  }\item[{float}]{r,  }\item[{float}]{t,  }\item[{int}]{day,  }\item[{int}]{mon,  }\item[{int}]{year,  }\item[{int}]{hours,  }\item[{int}]{minutes,  }\item[{string}]{key }\end{DoxyParamCaption})}
+
+fuction to set all the required info for each records 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ wind speed \\
+\hline
+{\em r} & -\/solar radiation \\
+\hline
+{\em t} & -\/ambient temperature \\
+\hline
+{\em day} & -\/day data was recorded \\
+\hline
+{\em mon} & -\/month data recorded \\
+\hline
+{\em year} & -\/year data recorded \\
+\hline
+{\em hours} & -\/hour section of the time data was recorded \\
+\hline
+{\em minutes} & -\/minutes section of the time the data was records \\
+\hline
+{\em key} & -\/string key of the record to avoid duplicates and ordering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_records_a14de1639929ed19354a8095e87a499cb}\label{class_records_a14de1639929ed19354a8095e87a499cb}} 
+\index{Records@{Records}!setKey@{setKey}}
+\index{setKey@{setKey}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{setKey()}{setKey()}}
+{\footnotesize\ttfamily void Records\+::set\+Key (\begin{DoxyParamCaption}\item[{string}]{k }\end{DoxyParamCaption})}
+
+
+
+function to set the key of the record 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & (int) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_records_aa33d1f8efcb18d146fcbe584c343d73d}\label{class_records_aa33d1f8efcb18d146fcbe584c343d73d}} 
+\index{Records@{Records}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_records}{Records}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+a friend function useful for debugging but not a very good thing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & (ostream\&) \\
+\hline
+{\em r} & (const \mbox{\hyperlink{class_records}{Records}}\&) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/vicky/\+Desktop/\+U\+N\+I/\+Year 2 S\+E\+M1/\+I\+C\+T283/\+Weather\+App/Records.\+h\item 
+C\+:/\+Users/vicky/\+Desktop/\+U\+N\+I/\+Year 2 S\+E\+M1/\+I\+C\+T283/\+Weather\+App/Records.\+cpp\end{DoxyCompactItemize}
